@@ -195,8 +195,6 @@ class PrivateCarTests(TestCase):
         self.assertFalse(Car.objects.filter(id=car.id).exists())
 
 
-
-
 class PrivateDriverTests(TestCase):
     def setUp(self) -> None:
         self.user = get_user_model().objects.create_user(
